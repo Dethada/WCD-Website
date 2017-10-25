@@ -21,3 +21,8 @@ function initMap() {
         infoWindow.open(map, marker);
     })
 }
+
+$("a[href='#bottom']").click(function() {
+    $("html, body").animate({ scrollTop: 1000}, "slow");
+    return false;
+});

@@ -5,6 +5,39 @@ body, html {
     background-color:#f4f4f4;
 }
 
+#home-showcase h1 {
+	font-size: 5em;
+  color: #ffffff;
+  letter-spacing: 2px;
+  pointer-events: none;
+  font-weight: 700;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+	text-align: center;
+}
+
+#home-showcase a {
+	font-size: 5em;
+  color: #ffffff;
+  font-weight: 700;
+  position: absolute;
+  top: 55%;
+  left: 0;
+  right: 0;
+	text-align: center;
+	text-decoration:none;
+}
+
+#home-showcase img {
+	height: auto;
+	width: 100%;
+	z-index: -1;
+	padding: 0;
+	margin: 0;
+}
+
 /* Global */
 .container {
     width:80%;
@@ -29,7 +62,7 @@ ul {
 /* Header **/
 header {
     background:#292c2f;
-    color:#ffffff;
+		color:#ffffff;
     padding-top: 30px;
     min-height:70px;
     border-bottom:#A96DA3 3px solid;
@@ -93,6 +126,7 @@ header a:hover {
 /* Footer left */
 .footer-distributed .footer-left {
 	width: 40%;
+	color: #ffffff;
 }
 
 /* Footer links */
