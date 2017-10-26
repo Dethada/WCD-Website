@@ -54,9 +54,14 @@ ul {
   height:38px;
   background:#A96DA3;
   border:0;
-  padding-left: 20px;
-  padding-right:20px;
+	padding-top: 12px;
+	padding-bottom: 15px;
   color:#ffffff;
+}
+
+.button_1:hover {
+	cursor: pointer;
+	background:rgb(134, 79, 130);
 }
 
 /* Header **/
@@ -111,7 +116,7 @@ header a:hover {
 	width: 100%;
 	text-align: left;
 	font: bold 16px sans-serif;
-
+	clear: both;
 	padding: 55px 50px;
 	margin-top: 80px;
 }
@@ -243,10 +248,41 @@ header a:hover {
 /* Contacts Page */
 /* Google maps */
 #map {
-  height: 400px;
+  height: 30em;
   width: 100%;
 }
 
-.contact-info {
-  text-align: center;
+.contact-wrapper {
+	text-align: center;
+}
+
+.contact-info, .contact-form {
+	vertical-align: top;
+	display: inline-block;
+	margin: 3%;
+}
+
+.contact-form h2, .contact-form p {
+	text-align: left;
+}
+
+.contact-form input {
+	padding: 10px 1px;
+	line-height: 18px;
+}
+
+.contact-form textarea {
+	padding: 10px 1px;
+}
+
+.contact-form input, .contact-form textarea {
+	width: 100%;
+	margin: 1%;
+	resize: none;
+	border: 0;
+	border-radius: 5px;
+}
+
+.contact-form button {
+	width: 100%;
 }
