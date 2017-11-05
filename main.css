@@ -1,11 +1,15 @@
 /* Global */
+* {
+	padding:0;
+	margin:0;
+	border: 0;
+}
+
 body, html {
     font: 15px/1.5 Arial, Helvetica,sans-serif;
-    padding:0;
-    margin:0;
-		background-color:#f4f4f4;
-		width: 100%;
-		height: 100%;
+	background-color:#f4f4f4;
+	width: 100%;
+	height: 100%;
 }
 
 .container {
@@ -16,6 +20,7 @@ body, html {
 
 h1 {
 	font-family: 'Alegreya', serif;
+	font-size: 30px;
 }
 
 h2 {
@@ -33,12 +38,12 @@ ul {
 
 /* For forms */
 .button_1 {
-  height:38px;
-  background:#A96DA3;
-  border:0;
+	height:38px;
+	background:#A96DA3;
+	border:0;
 	padding-top: 12px;
 	padding-bottom: 15px;
-  color:#ffffff;
+	color:#ffffff;
 }
 
 .button_1:hover {
@@ -53,10 +58,10 @@ ul {
 
 /* For urls */
 .button_2 {
-  height:38px;
-  background:#A96DA3;
-  border:0;
-	padding: 1.4% 3%;;
+	height:38px;
+	background:#A96DA3;
+	border:0;
+	padding: 1.4% 3%;
 	color:#ffffff;
 	text-decoration: none;
 	font-size: 1.5em;
@@ -76,17 +81,17 @@ ul {
 /* Header **/
 header {
     background:#292c2f;
-		color:#ffffff;
+	color:#ffffff;
     padding-top: 30px;
     min-height:70px;
     border-bottom:#A96DA3 3px solid;
 }
   
 header a {
-  color:#ffffff;
-  text-decoration:none;
-  text-transform: uppercase;
-  font-size:16px;
+	color:#ffffff;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size:16px;
 }
 
 header li {
@@ -254,37 +259,35 @@ header a:hover {
 }
 
 @media (max-width: 900px) {
-	
-		.footer-distributed{
-			font: bold 14px sans-serif;
-		}
-	
-		.footer-distributed .footer-left,
-		.footer-distributed .footer-center,
-		.footer-distributed .footer-right{
-			display: block;
-			width: 100%;
-			margin-bottom: 40px;
-			text-align: center;
-		}
-	
-		.footer-distributed .footer-center i{
-			margin-left: 0;
-		}
-	
+	.footer-distributed{
+		font: bold 14px sans-serif;
 	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+}
 
 /* Index page */
 /* Secure decenntralized storage solution */
 #index-showcase h2 {
-	font-size: 3em;
-  color: #ffffff;
-  letter-spacing: 2px;
-  pointer-events: none;
-  position: absolute;
-  top: 35%;
-  left: 0;
-  right: 0;
+	font-size: 3rem;
+	color: #ffffff;
+	letter-spacing: 2px;
+	pointer-events: none;
+	position: absolute;
+	top: 35%;
+	left: 0;
+	right: 0;
 	text-align: center;
 }
 
@@ -298,7 +301,7 @@ header a:hover {
 	float: left;
 	width: 70%;
 	padding: 2%;
-	padding-bottom: 5%;
+	padding-bottom: 50px;
 }
 
 #index-harddrive {
