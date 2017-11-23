@@ -89,8 +89,8 @@ ul {
 	cursor: default;
 }
 
-/* Header **/
-header {
+/* Nav-bar **/
+.nav-bar {
     background:#292c2f;
 	color:#ffffff;
     padding-top: 30px;
@@ -98,43 +98,40 @@ header {
     border-bottom:#A96DA3 3px solid;
 }
   
-header nav a {
+.nav-bar nav a {
 	color:#ffffff;
 	text-decoration:none;
 	text-transform: uppercase;
 	font-size:16px;
 }
 
-#branding a {
+.nav-bar #branding a {
 	text-decoration: none;
 	text-transform: none;
 	color:#ffffff;
 }
 
-header li {
+.nav-bar li {
   display:inline;
   padding: 0 20px 0 20px;
 }
 
-header #branding {
+.nav-bar #branding {
   float:left;
 }
-
-header #branding h1 {
+.nav-bar #branding h1 {
   margin:0;
 }
-
-header nav {
+.nav-bar nav {
   float:right;
   margin-top:10px;
 }
-
-header .highlight, header .current a {
+.nav-bar .highlight, header .current a {
   color:#A96DA3;
   font-weight:bold;
 }
 
-header nav a:hover {
+.nav-bar header nav a:hover {
   color:#cccccc;
   font-weight:bold;
 }
@@ -473,6 +470,125 @@ header nav a:hover {
 }
 
 /* Product Page */
+#plans {
+	text-align: center;
+}
+
+.plans-card {
+	text-align: center;
+	display: inline-block;
+	width: 20%;
+	margin: 0.5em;
+	height: 25em;
+	position:relative;
+	color: #ffffff;
+}
+
+.plans-card h2 {
+	font-weight: 100;
+}
+
+.plans-card .plan-description {
+	margin: auto;
+	width: 80%;
+}
+
+.plans-card .plan-description p {
+	text-align: left;
+	margin: 5px;
+}
+
+.plan-price {
+	font-size: 2.5em;
+}
+
+.plans-button {
+	position: absolute;
+	left: 15%;
+	width: 70%;
+	bottom: 0;
+	text-decoration: none;
+	background: #ffffff;
+	border-radius: 5px;
+	color: #000000;
+	margin-bottom: 10px;
+	padding: 10px 0px;
+	font-size: 1em;
+	font-family: 'Roboto',sans-serif;
+}
+
+.plans-button:hover {
+	cursor: pointer;
+	background: rgb(218, 214, 218);
+	-webkit-transition: 0.3s ease-out;
+	-moz-transition: 0.3s ease-out;
+	-ms-transition: 0.3s ease-out;
+	-o-transition: 0.3s ease-out;
+	transition: 0.3s ease-out;
+}
+
+.button-free {
+	color: #11998e;
+}
+
+.button-pro {
+	color: #fc4a1a;
+}
+
+.button-business {
+	color: #6C5B7B;
+}
+
+.button-enterprise {
+	color: #514A9D;
+}
+
+.plans-card-free {
+	background: #11998e;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #11998e, #21974c);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #11998e, #21974c);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.plans-card-pro {
+	background: #fc4a1a;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #fc4a1a, #c78d18);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #fc4a1a, #c78d18);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.plans-card-business {
+	background: #6C5B7B;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #6C5B7B, rgb(177, 64, 98));
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #6C5B7B, rgb(177, 64, 98));
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.plans-card-enterprise {
+	background: #514A9D;
+	/* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #514A9D, rgb(15, 137, 153));
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #514A9D, rgb(15, 137, 153));
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+hr {
+	display: block;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: auto;
+	margin-right: auto;
+	border-style: inset;
+	border-width: 1px;
+	width: 85%;
+}
 
 /* Contacts Page */
 /* Google maps */
