@@ -197,7 +197,7 @@
 }
 
 body, html {
-    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
 	background-color:#f4f4f4;
 	width: 100%;
 	height: 100%;
@@ -213,17 +213,26 @@ figure {
     overflow:hidden;
 }
 
+.heading {
+	color: #A96DA3;
+	font-size: 1.5em;
+}
+
+.color-purple {
+	color: #A96DA3;
+}
+
 h1 {
-	font-family: 'Alegreya', serif;
+	font-family: 'Alegreya', Georgia, 'Times New Roman', Times, serif;
 	font-size: 2em;
 }
 
 h2 {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
 }
 
 p {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 ul {
@@ -232,7 +241,7 @@ ul {
 }
 
 /* For forms */
-.button_1 {
+.button_form {
 	height:38px;
 	background:#A96DA3;
 	border:0;
@@ -241,9 +250,9 @@ ul {
 	color:#ffffff;
 }
 
-.button_1:hover {
+.button_form:hover {
 	cursor: pointer;
-	background:rgb(134, 79, 130);
+	background:#864F82;
 	-webkit-transition: 0.3s ease-out;
 	-moz-transition:    0.3s ease-out;
 	-ms-transition:     0.3s ease-out;
@@ -251,8 +260,8 @@ ul {
 	transition:         0.3s ease-out;
 }
 
-/* For urls */
-.button_2 {
+/* For links */
+.button_link {
 	height:38px;
 	background:#A96DA3;
 	border-radius: 5px;
@@ -263,7 +272,7 @@ ul {
 	font-family: 'Roboto', sans-serif;
 }
 
-.button_2:hover {
+.button_link:hover {
 	cursor: pointer;
 	color: #243053;
 	-webkit-transition: color 0.3s ease-out;
@@ -274,7 +283,7 @@ ul {
 }
 
 @media (max-width:425px) {
-	.button_2 {
+	.button_link {
 		font-size: 1em;
 		height: 28px;
 	}
@@ -487,7 +496,7 @@ ul {
 }
 
 /* Index page */
-/* Secure decenntralized storage solution */
+/* Display image */
 #index-showcase img {
 	height: auto;
 	width: 100%;
@@ -512,14 +521,14 @@ ul {
 	}
 }
 
-/* Nice green #00A572 */
-#index-text h2 {
-	color: #A96DA3;
-}
-
 /* who are we */
 #index-about {
 	background-color: #ffffff;
+}
+
+#index-about header {
+	display: inline-block;
+	border: solid;
 }
 
 #index-about img, #index-about .wrapper {
@@ -557,10 +566,6 @@ ul {
 	font-size: 1.5em;
 }
 
-.fa-handshake-o, .fa-server, .fa-database {
-	color: #A96DA3;
-}
-
 #index-stats .stats-column {
 	display: inline-block;
 	padding: 1% 5% 0 5%;
@@ -582,7 +587,7 @@ ul {
 	text-align: left;
 }
 
-#index-clients h1, #index-clients h2 {
+#index-clients h2, #index-clients h3 {
 	padding: 1.5%;
 }
 
@@ -593,21 +598,17 @@ ul {
 	margin-top: 5em;	
 }
 
-#about-mission h1 {
-	color: #A96DA3;
-}
-
 #about-mission p {
 	width: 60%;
 	font-size: 3em;
 	margin: auto;
 	text-align: left;
-	color: rgb(131, 121, 121);
+	color: #837979;
 }
 
 #about-mission span {
 	font-weight: bold;
-	color: rgb(112, 64, 124);
+	color: #70407C;
 }
 
 /* our clients */
@@ -616,10 +617,6 @@ ul {
 	width: 60%;
 	margin:auto;
 	margin-top: 5em;
-}
-
-#about-clients h1 {
-	color: #A96DA3;
 }
 
 .clients-row {
@@ -638,10 +635,6 @@ ul {
 	margin: auto;
 	margin-top: 5em;
 	width: 80%;
-}
-
-#about-investors h1 {
-	color: #A96DA3;
 }
 
 .investors {
@@ -680,13 +673,8 @@ ul {
 	margin-top: 2%;
 }
 
-#product header h1 {
+#product-description h2 {
 	text-align:center;
-}
-
-#product-description header {
-	margin-bottom: 1em;
-	color: #A96DA3;
 }
 
 #product-description p {
@@ -701,10 +689,6 @@ ul {
 	margin: auto;
 	margin-top: 2em;
 	width: 80%;
-}
-
-#product-features h1 {
-	color: #A96DA3;
 }
 
 .features {
@@ -738,10 +722,6 @@ ul {
 /* Plans */
 #plans {
 	text-align: center;
-}
-
-#plans header h1 {
-	color: #A96DA3;
 }
 
 .plans-card {
@@ -786,33 +766,16 @@ ul {
 	margin-bottom: 10px;
 	padding: 10px 0px;
 	font-size: 1em;
-	font-family: 'Roboto',sans-serif;
 }
 
 .plans-button:hover {
 	cursor: pointer;
-	background: rgb(218, 214, 218);
+	background: #DAD6DA;
 	-webkit-transition: 0.3s ease-out;
 	-moz-transition: 0.3s ease-out;
 	-ms-transition: 0.3s ease-out;
 	-o-transition: 0.3s ease-out;
 	transition: 0.3s ease-out;
-}
-
-.button-free {
-	color: #11998e;
-}
-
-.button-pro {
-	color: #fc4a1a;
-}
-
-.button-business {
-	color: #6C5B7B;
-}
-
-.button-enterprise {
-	color: #514A9D;
 }
 
 .plans-card-free {
@@ -836,18 +799,18 @@ ul {
 .plans-card-business {
 	background: #6C5B7B;
 	/* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #6C5B7B, rgb(177, 64, 98));
+	background: -webkit-linear-gradient(to right, #6C5B7B, #B14062);
 	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #6C5B7B, rgb(177, 64, 98));
+	background: linear-gradient(to right, #6C5B7B, #B14062);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .plans-card-enterprise {
 	background: #514A9D;
 	/* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #514A9D, rgb(15, 137, 153));
+	background: -webkit-linear-gradient(to right, #514A9D, #0F8999);
 	/* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #514A9D, rgb(15, 137, 153));
+	background: linear-gradient(to right, #514A9D, #0F8999);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -864,19 +827,19 @@ ul {
 	font-size: 1.5em;
 }
 
-.plan-details-free {
+.color-free {
 	color:#11998e;
 
 }
-.plan-details-pro {
+.color-pro {
 	color:#fc4a1a;
 
 }
-.plan-details-business {
+.color-business {
 	color:#6C5B7B;
 }
 
-.plan-details-enterprise {
+.color-enterprise {
 	color:#514A9D;
 }
 
@@ -893,7 +856,7 @@ ul {
 	font-weight: 200;
 }
 
-hr {
+.line {
 	display: block;
 	margin-top: 0.5em;
 	margin-bottom: 0.5em;
@@ -929,10 +892,6 @@ hr {
 	vertical-align: top;
 	display: inline-block;
 	margin: 3%;
-}
-
-.contact-wrapper h2 {
-	color: #A96DA3;
 }
 
 .contact-form {

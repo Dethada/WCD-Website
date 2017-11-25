@@ -1,204 +1,209 @@
 <!DOCTYPE html>
 <html lang="en-SG">
-    <head>
-        <title>Syzygyy | Product</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="main.css">
-    </head>
+<head>
+    <title>Syzygyy | Product</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
 
-    <body>
-    <!-- Navigation bar -->
-    <header class="nav-bar">
-        <div class="container">
-            <div id="branding">
-            <a href="index.html"><h1><span class="highlight">Syzygyy</span> Blockchain</h1></a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
-                    <li class="current"><a href="product.html"><i class="fa fa-code" aria-hidden="true"></i> Product</a></li>
-                    <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</a></li>
-                    <li><a href="#" onClick="alert('Login function still under development')"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
-                </ul>
-            </nav>
+<body>
+<!-- Navigation bar -->
+<header class="nav-bar">
+    <div class="container">
+        <div id="branding">
+        <a href="index.html"><h1><span class="highlight">Syzygyy</span> Blockchain</h1></a>
         </div>
-    </header>
+        <nav>
+            <ul>
+                <li><a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
+                <li class="current"><a href="product.html"><i class="fa fa-code" aria-hidden="true"></i> Product</a></li>
+                <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</a></li>
+                <li><a href="#" onClick="alert('Login function still under development')"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
 
-    
-    <div id="product">
-        <!-- Product description -->
-        <div id="product-description">
-        <header><h1>SyzygyySTORAGE</h1></header>
-        <p>We use blockchain technology to provide highest levels of data security with industy standard End-to-End encryption. Instead of running our own servers like the conventional cloud service providers, we allow other users to contribute their own storage and we pay them according to how much of their shared storage is being used. This means we can provide storage at a lower price compared to traditional cloud storage service providers, and there is also no worries of your data being read by the cloud providers. If you are worrying about the users reading your data, no worries, your data is split into multiple parts, then encrypted before it is stored on the servers. Since only you will have the keys, no one else will have access to your data.</p>
+
+<!-- Product description -->
+<article id="product-description">
+<header class="heading"><h2>SyzygyySTORAGE</h2></header>
+<br>
+<p>We use blockchain technology to provide highest levels of data security with industy standard End-to-End encryption. 
+    Instead of running our own servers like the conventional cloud service providers, we allow other users to contribute 
+    their own storage and we pay them according to how much of their shared storage is being used. This means we can provide 
+    storage at a lower price compared to traditional cloud storage service providers, and there is also no worries of your 
+    data being read by the cloud providers. If you are worrying about the users reading your data, no worries, your data is 
+    split into multiple parts, then encrypted before it is stored on the servers. Since only you will have the keys, no one 
+    else will have access to your data.</p>
+</article>
+
+<!-- Product Features -->
+<section id="product-features">
+    <header class="heading"><h2>Features</h2></header>
+    <article class="features">
+    <figure><img src="images/data-encryption.png" alt="Data Encryption"></figure>
+        <div class="features-text">
+        <h2>End-to-End Encryption</h2><br>
+        <p>We have end-to-end encryption for all of your files. When end-to-end encrypted, all your files are secured from falling into the wrong hands.</p>
         </div>
+    </article>
+    <article class="features">
+    <figure><img src="images/redundant.svg" alt="Redundancy"></figure>
+        <div class="features-text">
+        <h2>Higher Availability</h2><br>
+        <p>We store your files by splitting it into parts on multiple servers across the globe. This eliminates any single point of failure and ensures highest possible uptime, on par with any other cloud storage solutions.</p>
+        </div>
+    </article>
+    <article class="features">
+    <figure><img src="images/fast.png" alt="Blazing Fast"></figure>
+        <div class="features-text">
+        <h2>Blazing Fast</h2><br>
+        <p>Since the files are stored on multiple servers, it helps to avoid slow download or upload speed from one place. Making it fast and reliable.</p>
+        </div>
+    </article>
+    <article class="features">
+    <figure><img src="images/open-source.svg" alt="Open Source"></figure>
+        <div class="features-text">
+        <h2>Open-Source Software</h2><br>
+        <p>Our project is completely open source. Many individuals have contributed to our project, and there is an active community building innovative applications on top of the our API.</p>
+        </div>
+    </article>
+</section>
 
-        <!-- Product Features -->
-        <div id="product-features">
-            <h1>Features</h1>
-            <div class="features">
-            <figure><img src="images/data-encryption.png" alt="Data Encryption"></figure>
-                <div class="features-text">
-                <h2>End-to-End Encryption</h2><br>
-                <p>We have end-to-end encryption for all of your files. When end-to-end encrypted, all your files are secured from falling into the wrong hands.</p>
-                </div>
-            </div>
-            <div class="features">
-            <figure><img src="images/redundant.svg" alt="Redundancy"></figure>
-                <div class="features-text">
-                <h2>Higher Availability</h2><br>
-                <p>We store your files by splitting it into parts on multiple servers across the globe. This eliminates any single point of failure and ensures highest possible uptime, on par with any other cloud storage solutions.</p>
-                </div>
-            </div>
-            <div class="features">
-            <figure><img src="images/fast.png" alt="Blazing Fast"></figure>
-                <div class="features-text">
-                <h2>Blazing Fast</h2><br>
-                <p>Since the files are stored on multiple servers, it helps to avoid slow download or upload speed from one place. Making it fast and reliable.</p>
-                </div>
-            </div>
-            <div class="features">
-            <figure><img src="images/open-source.svg" alt="Open Source"></figure>
-                <div class="features-text">
-                <h2>Open-Source Software</h2><br>
-                <p>Our project is completely open source. Many individuals have contributed to our project, and there is an active community building innovative applications on top of the our API.</p>
-                </div>
-            </div>
+<!-- Show available plans -->
+<section id="plans">
+    <header class="heading"><h2>Plans</h2></header>
+
+    <!-- Plans cards -->
+    <article class="plans-card plans-card-free">
+        <h2>Basic</h2>
+        <div class="line"></div>
+        <p><span class="plan-price">$1/month</span></p><br>
+        <div class="plan-description">
+        <p>Suitable for personal use, backup your important files.<br>Max storage: 5GB</p>
+        </div>
+        <a class="plans-button color-free" href="#">PURCHASE PLAN</a>
+    </article>
+    <article class="plans-card plans-card-pro">
+        <h2>Pro</h2>
+        <div class="line"></div>
+        <p><span class="plan-price">$20/month</span></p><br>
+        <div class="plan-description">
+        <p>Suitable for professional use, anyone with less than 1gb of files to store.<br>Max storage: 100GB</p>
+        </div>
+        <a class="plans-button color-pro" href="#">PURCHASE PLAN</a>
+    </article>
+    <article class="plans-card plans-card-business">
+        <h2>Business</h2>
+        <div class="line"></div>
+        <p><span class="plan-price">$200/month</span></p><br>
+        <div class="plan-description">
+        <p>Suitable businesses requiring large amount of reliable, secure and fast storage.<br>Max Storage: Unlimited</p>
+        </div>
+        <a class="plans-button color-business" href="#">PURCHASE PLAN</a>
+    </article>
+    <article class="plans-card plans-card-enterprise">
+        <h2>Enterprise</h2>
+        <div class="line"></div>
+        <p><span class="plan-price">Contact US</span></p><br>
+        <div class="plan-description">
+        <p>Suitable for Enterprises requiring 100% uptime, maximum security and redundancy. 24/7 Phone, Email or Live Chat support avaliable.<br>Max Storage: Unlimited</p>
+        </div>
+        <a class="plans-button color-enterprise" href="contact.html">GET IN TOUCH</a>
+    </article>
+    <br>
+
+    <!-- Plan details -->
+    <article class="plan-details">
+    <h2 class="color-free">Basic includes</h2>
+    <div class="plan-details-specifics">
+        <ul>
+            <li>Split file into 2 parts</li>
+            <li>5GB Storage</li>
+        </ul>
+    </div>
+    </article>
+    <article class="plan-details">
+    <h2 class="color-pro">Pro includes</h2>
+    <div class="plan-details-specifics">
+        <ul>
+            <li>Split file into 4 parts</li>
+            <li>100GB Storage</li>
+            <li>Email support</li>
+        </ul>
+    </div>
+    </article>
+    <article class="plan-details">
+    <h2 class="color-business">Business includes</h2>
+    <div class="plan-details-specifics">
+        <ul>
+            <li>Split file into 8 parts</li>
+            <li>Unlimited Storage</li>
+            <li>Multiple File version support</li>
+            <li>Priority Email support</li>
+        </ul>
+    </div>
+    </article>
+    <article class="plan-details">
+    <h2 class="color-enterprise">Enterprise includes</h2>
+    <div class="plan-details-specifics">
+        <ul>
+            <li>Split file into 12 parts</li>
+            <li>Unlimited Storage</li>
+            <li>Multiple File version support</li>
+            <li>24/7 Live Customer support</li>
+            <li>Priority for servers with high uptime</li>
+        </ul>
+    </div>
+    </article>
+</section>
+
+<!-- Footer -->
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <h1><span class="highlight">Syzygyy</span> Blockchain</h1>
+        <p class="footer-links">
+            <a href="index.html">Home</a>
+            |
+            <a href="about.html">About</a>
+            |
+            <a href="product.html">Product</a>
+            |
+            <a href="contact.html">Contact</a>
+        </p>
+        <p class="footer-company-name">Copyright &copy; 2017 Syzygyy</p>
+    </div>
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>30 Science Park Road</span> Singapore, Singapore</p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+65 6777 8999</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:info@syzygyy.com">info@syzygyy.com</a></p>
         </div>
     </div>
-
-    <!-- Show available plans -->
-    <div id="plans">
-        <header><h1>Plans</h1></header>
-
-        <!-- Plans cards -->
-        <div class="plans-card plans-card-free">
-            <h2>Basic</h2>
-            <hr>
-            <p><span class="plan-price">$1/month</span></p><br>
-            <div class="plan-description">
-            <p>Suitable for personal use, backup your important files.<br>Max storage: 5GB</p>
-            </div>
-            <a class="plans-button button-free" href="#">PURCHASE PLAN</a>
-        </div>
-        <div class="plans-card plans-card-pro">
-            <h2>Pro</h2>
-            <hr>
-            <p><span class="plan-price">$20/month</span></p><br>
-            <div class="plan-description">
-            <p>Suitable for professional use, anyone with less than 1gb of files to store.<br>Max storage: 100GB</p>
-            </div>
-            <a class="plans-button button-pro" href="#">PURCHASE PLAN</a>
-        </div>
-        <div class="plans-card plans-card-business">
-            <h2>Business</h2>
-            <hr>
-            <p><span class="plan-price">$200/month</span></p><br>
-            <div class="plan-description">
-            <p>Suitable businesses requiring large amount of reliable, secure and fast storage.<br>Max Storage: Unlimited</p>
-            </div>
-            <a class="plans-button button-business" href="#">PURCHASE PLAN</a>
-        </div>
-        <div class="plans-card plans-card-enterprise">
-            <h2>Enterprise</h2>
-            <hr>
-            <p><span class="plan-price">Contact US</span></p><br>
-            <div class="plan-description">
-            <p>Suitable for Enterprises requiring 100% uptime, maximum security and redundancy. 24/7 Phone, Email or Live Chat support avaliable.<br>Max Storage: Unlimited</p>
-            </div>
-            <a class="plans-button button-enterprise" href="contact.html">GET IN TOUCH</a>
-        </div>
-        <br>
-
-        <!-- Plan details -->
-        <div class="plan-details">
-        <h2 class="plan-details-free">Baisc includes</h2>
-        <div class="plan-details-specifics">
-            <ul>
-                <li>Split file into 2 parts</li>
-                <li>5GB Storage</li>
-            </ul>
-        </div>
-        </div>
-        <div class="plan-details">
-        <h2 class="plan-details-pro">Pro includes</h2>
-        <div class="plan-details-specifics">
-            <ul>
-                <li>Split file into 4 parts</li>
-                <li>100GB Storage</li>
-                <li>Email support</li>
-            </ul>
-        </div>
-        </div>
-        <div class="plan-details">
-        <h2 class="plan-details-business">Business includes</h2>
-        <div class="plan-details-specifics">
-            <ul>
-                <li>Split file into 8 parts</li>
-                <li>Unlimited Storage</li>
-                <li>Multiple File version support</li>
-                <li>Priority Email support</li>
-            </ul>
-        </div>
-        </div>
-        <div class="plan-details">
-        <h2 class="plan-details-enterprise">Enterprise includes</h2>
-        <div class="plan-details-specifics">
-            <ul>
-                <li>Split file into 12 parts</li>
-                <li>Unlimited Storage</li>
-                <li>Multiple File version support</li>
-                <li>24/7 Live Customer support</li>
-                <li>Priority for servers with high uptime</li>
-            </ul>
-        </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            Providing the most Affordable Blockchain Storage Solution
+            with no comprimise on security and uptime.
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.facebook.com" target='_blank'><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/" target='_blank'><i class="fa fa-twitter"></i></a>
+            <a href="https://www.linkedin.com" target='_blank'><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com" target='_blank'><i class="fa fa-github"></i></a>
         </div>
     </div>
-    
-    <!-- Footer -->
-    <footer class="footer-distributed">
-        <div class="footer-left">
-            <h1><span class="highlight">Syzygyy</span> Blockchain</h1>
-            <p class="footer-links">
-                <a href="index.html">Home</a>
-                |
-                <a href="about.html">About</a>
-                |
-                <a href="product.html">Product</a>
-                |
-                <a href="contact.html">Contact</a>
-            </p>
-            <p class="footer-company-name">Copyright &copy; 2017 Syzygyy</p>
-        </div>
-        <div class="footer-center">
-            <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>30 Science Park Road</span> Singapore, Singapore</p>
-            </div>
-            <div>
-                <i class="fa fa-phone"></i>
-                <p>+65 6777 8999</p>
-            </div>
-            <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:info@syzygyy.com">info@syzygyy.com</a></p>
-            </div>
-        </div>
-        <div class="footer-right">
-            <p class="footer-company-about">
-                <span>About the company</span>
-                Providing the most Affordable Blockchain Storage Solution
-                with no comprimise on security and uptime.
-            </p>
-            <div class="footer-icons">
-                <a href="https://www.facebook.com" target='_blank'><i class="fa fa-facebook"></i></a>
-                <a href="https://twitter.com/" target='_blank'><i class="fa fa-twitter"></i></a>
-                <a href="https://www.linkedin.com" target='_blank'><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com" target='_blank'><i class="fa fa-github"></i></a>
-            </div>
-        </div>
-    </footer>
-    </body>
+</footer>
+</body>
 </html>
