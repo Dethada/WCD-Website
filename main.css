@@ -302,7 +302,7 @@ ul {
     border-bottom:#A96DA3 3px solid;
 }
   
-.nav-bar nav a {
+.nav-bar ul a {
 	color:#ffffff;
 	text-decoration:none;
 	text-transform: uppercase;
@@ -326,7 +326,7 @@ ul {
 .nav-bar #branding h1 {
   margin:0;
 }
-.nav-bar nav {
+.nav-bar ul {
   float:right;
   margin-top:10px;
 }
@@ -338,6 +338,44 @@ ul {
 .nav-bar header nav a:hover {
   color:#cccccc;
   font-weight:bold;
+}
+
+.nav-bar .navigation-menu-button {
+	display: none;
+}
+
+@media (max-width: 641px) {
+	.nav-bar .navigation-menu-button {
+		display: block;
+		float: right;
+		margin: 2% 6% 0 4%;
+	}
+	.nav-bar ul {
+		clear: both;
+		display: none;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.nav-bar ul li {
+		display: block;
+		margin: 3% 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.nav-bar .container {
+		width: 95%;
+	}
+	.nav-bar ul {
+		width: 55%;
+	}
+	.nav-bar ul li {
+		padding: 5px;
+	}
+	.nav-bar ul li a {
+		font-size: 90%;
+	}
 }
 
 /* Footer */
@@ -515,15 +553,10 @@ ul {
 	font-size: 18em;
 }
 
-@media (max-width: 1266px) {
-	#index-harddrive {
-		display: none;
-	}
-}
-
 /* who are we */
 #index-about {
 	background-color: #ffffff;
+	padding-bottom: 50px;
 }
 
 #index-about header {
@@ -539,6 +572,7 @@ ul {
 
 #index-about img {
 	width: 100%;
+	margin: 3%;
 }
 
 #index-about figure {
@@ -571,13 +605,26 @@ ul {
 	padding: 1% 5% 0 5%;
 }
 
+@media (max-width: 1266px) {
+	#index-harddrive {
+		display: none;
+	}
+	#index-about figure {
+		display: none;
+	}
+	#index-about .wrapper, #index-text {
+		margin-left: 3%;
+		width: 80%;
+	}
+}
+
 /* Clients */
 #index-clients {
 	text-align: center;
 	padding: 5%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background: silver; /* For browsers that do not support gradients */
+	background: #c0c0c0; /* For browsers that do not support gradients */
 	background: linear-gradient(to bottom right,#274abb,#cbb4d4);
 }
 
@@ -596,6 +643,7 @@ ul {
 #about-mission {
 	text-align: center;
 	margin-top: 5em;	
+	overflow: hidden;
 }
 
 #about-mission p {
@@ -617,6 +665,13 @@ ul {
 	width: 60%;
 	margin:auto;
 	margin-top: 5em;
+	overflow: hidden;
+}
+
+@media (max-width: 425px) {
+	#about-clients {
+		width: 80%;
+	}
 }
 
 .clients-row {
@@ -635,6 +690,7 @@ ul {
 	margin: auto;
 	margin-top: 5em;
 	width: 80%;
+	overflow: hidden;
 }
 
 .investors {
@@ -642,6 +698,11 @@ ul {
 	display: inline-block;
 	margin: 2% 0 3% 0;
 	vertical-align: top;
+}
+@media (max-width: 425px) {
+	.investors {
+		width: 90%;
+	}
 }
 
 .investors img {
@@ -665,6 +726,15 @@ ul {
 
 .investors p {
 	font-size: 1.2em;
+}
+
+/* #about-investors, .investors {
+	border: solid;
+} */
+@media (max-width: 768px) {
+	#about-mission p {
+		font-size: 2em;
+	}
 }
 
 /* Product Page */

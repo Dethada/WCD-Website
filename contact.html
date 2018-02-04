@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="scripts/responsive.js" async></script>
 </head>
 
 <body>
@@ -14,16 +15,15 @@
 <header class="nav-bar">
     <div class="container">
         <div id="branding">
-        <a href="index.html"><h1><span class="highlight">Syzygyy</span> Blockchain</h1></a>
+            <a href="index.html"><h1><span class="highlight">Syzygyy</span> Blockchain</h1></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
-                <li><a href="product.html"><i class="fa fa-code" aria-hidden="true"></i> Product</a></li>
-                <li class="current"><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</a></li>
-                <li><a href="#" onClick="alert('Login function still under development')"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
-            </ul>
-        </nav>
+        <a class="navigation-menu-button" href="#"><img src="images/hamburger_icon.svg" alt="Hamburger Menu Icon"></a>
+        <ul>
+            <li><a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
+            <li><a href="product.html"><i class="fa fa-code" aria-hidden="true"></i> Product</a></li>
+            <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</a></li>
+            <li><a href="#" onClick="alert('Login function still under development')"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+        </ul>
     </div>
 </header>
 
@@ -97,7 +97,7 @@
         </div>
     </div>
 </footer>
-<script src="map.js"></script>
+<script src="scripts/map.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIer4mKvQjmZd97ZHHBwXKEZ-N4n7aIsQ&callback=initMap"></script>
 </body>
 </html>

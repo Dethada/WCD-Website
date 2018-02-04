@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="scripts/responsive.js" async></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/dynamic_stats.js" async></script>
 </head>
 
 <body>
@@ -17,19 +20,19 @@
         <div id="branding">
             <a href="index.html"><h1><span class="highlight">Syzygyy</span> Blockchain</h1></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
-                <li><a href="product.html"><i class="fa fa-code" aria-hidden="true"></i> Product</a></li>
-                <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</a></li>
-                <li><a href="#" onClick="alert('Login function still under development')"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
-            </ul>
-        </nav>
+        <a class="navigation-menu-button" href="#"><img src="images/hamburger_icon.svg" alt="Hamburger Menu Icon"></a>
+        <ul>
+            <li><a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
+            <li><a href="product.html"><i class="fa fa-code" aria-hidden="true"></i> Product</a></li>
+            <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</a></li>
+            <li><a href="#" onClick="alert('Login function still under development')"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+        </ul>
     </div>
 </header>
 
 <!-- Display image -->
 <div id="index-showcase">
+    <!-- Source: https://www.pexels.com/photo/interior-of-office-building-325229/ -->
     <figure><img src="images/servers.jpeg" alt="Secure Decentralized Storage Solution"></figure>
 </div>
 
@@ -68,17 +71,17 @@
     <header><h2>Company Stats</h2></header>
     <article class="stats-column">
         <i class="fa fa-handshake-o fa-5x color-purple" aria-hidden="true"></i>
-        <h2>149 Thousand</h2>
+        <h2><span class="count">149</span> Thousand</h2>
         <h3>Active clients</h3>
     </article>
     <article class="stats-column">
         <i class="fa fa-server fa-5x color-purple" aria-hidden="true"></i>
-        <h2>41 Hundred</h2>
+        <h2><span class="count">41</span> Hundred</h2>
         <h3>Active nodes</h3>
     </article>
     <article class="stats-column">
         <i class="fa fa-database fa-5x color-purple" aria-hidden="true"></i>
-        <h2>89 Petabytes</h2>
+        <h2><span class="count">89</span> Petabytes</h2>
         <h3>Data Stored</h3>
     </article>
 </section>
