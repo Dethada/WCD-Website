@@ -1,7 +1,14 @@
 // jquery
+/* 
+https://stackoverflow.com/questions/32134451/call-function-on-scroll-only-once
+https://stackoverflow.com/questions/20791374/jquery-check-if-element-is-visible-in-viewport?lq=1
+https://stackoverflow.com/questions/17441065/how-to-detect-scroll-position-of-page-using-jquery
+https://codepen.io/shivasurya/pen/FatiB
+*/
 $(window).on('scroll',function() {
-    var top_of_element = $(".count").offset().top;
-    var bottom_of_element = $(".count").offset().top + $(".count").outerHeight();
+    var countElement = $(".count");
+    var top_of_element = countElement.offset().top;
+    var bottom_of_element = top_of_element + countElement.outerHeight();
     var bottom_of_screen = $(window).scrollTop() + window.innerHeight;
     var top_of_screen = $(window).scrollTop();
 

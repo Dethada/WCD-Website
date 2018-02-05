@@ -626,6 +626,7 @@ ul {
 	background-attachment: fixed;
 	background: #c0c0c0; /* For browsers that do not support gradients */
 	background: linear-gradient(to bottom right,#274abb,#cbb4d4);
+	min-height: 140px;
 }
 
 #index-clients .text {
@@ -636,6 +637,46 @@ ul {
 
 #index-clients h2, #index-clients h3 {
 	padding: 1.5%;
+}
+
+.quoteContainer {
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+/* tmp */
+#slides {
+overflow: hidden;
+position: relative;
+width: 100%;
+}
+
+#slides ul {
+list-style: none;
+width:100%;
+position: relative;
+}
+
+#slides li {
+width:100%;
+float:left;
+text-align: center;
+position: relative;
+}
+
+#buttons a {
+text-align:center;
+display:inline-block;
+outline:0;
+color:#000000;
+text-decoration:none;
+width:35px;
+font-size: 2em;
+}
+
+a#prev:hover, a#next:hover {
+color:#ffffff;
+text-shadow:.5px 0px #b14943;  
 }
 
 /* About Page */
@@ -989,3 +1030,67 @@ ul {
 .contact-form button {
 	width: 100%;
 }
+
+/* login page */
+#login-form {
+	text-align: center;
+	width: 50%;
+	padding: 10px 0;
+	margin: 5% auto;
+	border: solid;
+}
+
+#login-form input[type="text"], #login-form input[type="password"] {
+	display: block;
+	width: 309px;
+	height: 35px;
+	margin: 5px auto;
+	background: #fff;
+	border: 0px;
+	padding: 5px;
+	font-size: 16px;
+	border: 2px solid #fff;
+	transition: all 0.3s ease;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#login-form input[type="text"]:focus, #login-form input[type="password"]:focus {
+	border: 2px solid #A96DA3;
+}
+
+#login-form input[type="submit"] {
+	display: block;
+	background: #A96DA3;
+	width: 314px;
+	padding: 12px;
+	cursor: pointer;
+	color: #fff;
+	border: 0px;
+	margin: auto;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-size: 17px;
+	transition: all 0.3s ease;
+}
+
+#login-form input[type="submit"]:hover {
+	background: #865381;
+}
+
+#login-form a{
+	text-align: center;
+	font-family: Arial;
+	color: gray;
+	display: block;
+	margin: 15px auto;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	font-size: 12px;
+  }
+  
+  #login-form a:hover{
+	color: #A96DA3;
+  }
