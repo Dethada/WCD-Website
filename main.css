@@ -301,7 +301,7 @@ ul {
     min-height:70px;
     border-bottom:#A96DA3 3px solid;
 }
-  
+
 .nav-bar ul a {
 	color:#ffffff;
 	text-decoration:none;
@@ -766,7 +766,16 @@ ul {
 	display: inline-block;
 	margin: 2% 0 3% 0;
 	vertical-align: top;
-	text-align: left;
+	text-align: center;
+}
+
+@media (max-width: 425px) {
+	.features {
+		width: 45%;
+	}
+	#product-features {
+		width: 95%;
+	}
 }
 
 .features img {
