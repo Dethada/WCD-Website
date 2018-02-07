@@ -1040,7 +1040,9 @@ text-shadow:.5px 0px #b14943;
 	border: solid;
 }
 
-#login-form input[type="text"], #login-form input[type="password"] {
+#login-form input[type="text"], 
+#login-form input[type="password"],
+#login-form input[type="email"] {
 	display: block;
 	width: 309px;
 	height: 35px;
@@ -1056,7 +1058,9 @@ text-shadow:.5px 0px #b14943;
 	-webkit-border-radius: 5px;
 }
 
-#login-form input[type="text"]:focus, #login-form input[type="password"]:focus {
+#login-form input[type="text"]:focus, 
+#login-form input[type="password"]:focus,
+#login-form input[type="email"]:focus {
 	border: 2px solid #A96DA3;
 }
 

@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-SG">
 <head>
-    <title>Syzygyy | About</title>
+    <title>Syzygyy | Login</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
     <script src="scripts/responsive.js" defer></script>
+    <script src="scripts/cookies.js" defer></script>
+    <script src="scripts/login.js" defer></script>
 </head>
 <body>
 <!-- Navigation bar -->
@@ -27,12 +29,12 @@
 </header>
 <article id="login-form">
     <h2 class="color-purple">Login</h2>
-    <form>
+    <form action="console.html">
         <fieldset>
         <input type="text" placeholder="Username" required><br>
         <input type="password" placeholder="Password" required><br>
         <input type="submit" value="Login">
-        <a href="#">Don't have an account? Sign up here.</a>
+        <a href="register.html">Don't have an account? Sign up here.</a>
         </fieldset>
     </form>
 </article>

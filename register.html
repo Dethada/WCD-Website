@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-SG">
 <head>
-    <title>Syzygyy | Contact</title>
+    <title>Syzygyy | Register</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
     <script src="scripts/responsive.js" defer></script>
+    <script src="scripts/cookies.js" defer></script>
+    <script src="scripts/register.js" defer></script>
 </head>
-
 <body>
 <!-- Navigation bar -->
 <header class="nav-bar">
@@ -21,39 +22,23 @@
         <ul>
             <li><a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
             <li><a href="product.html"><i class="fa fa-code" aria-hidden="true"></i> Product</a></li>
-            <li class="current"><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</a></li>
-            <li><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+            <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</a></li>
+            <li class="current"><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
         </ul>
     </div>
 </header>
-
-<!-- Show google maps -->
-<div id="map"></div>
-
-<!-- Show address and contact form -->
-<div class="contact-wrapper">
-    <article class="contact-info">
-        <h2 class="color-purple">Headquarters</h2>
-        <p>Science Park 2 30 Science Park Road Singapore 117512
-        <br>Tel: <a href="tel:+6567778999">+65 6777 8999</a>
-        <br>Email: <a href="mailto:info@syzygyy.com">info@syzygyy.com</a></p>
-        <br><h2 class="color-purple">Operation Hours</h2>
-        <p>Mon-Fri: 10am to 6pm | Sat-Sun &amp; Public Holidays: Closed</p>
-    </article>
-    <article class="contact-form">
-        <h2 class="color-purple">Get in Touch</h2>
-        <p>Fill out this form to get in touch with us.</p>
-        <form action="result.html">
-            <fieldset>
-            <input type="text" name="name" placeholder="Name" required><br>
-            <input type="email" name="email" placeholder="Your email address" required><br>
-            <textarea placeholder="Message" name="message" cols="30" rows="5" required></textarea>
-            <button class="button_form"><i class="fa fa-paper-plane" aria-hidden="true"></i> Submit</button>
-            </fieldset>
-        </form>
-    </article>
-</div>
-
+<article id="login-form">
+    <h2 class="color-purple">Register</h2>
+    <form action="result.html">
+        <fieldset>
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="email" name="email" placeholder="Email" required><br>
+        <input type="password" name="password1" placeholder="Password" required><br>
+        <input type="password" name="password2" placeholder="Password" required><br>
+        <input type="submit" value="Register">
+        </fieldset>
+    </form>
+</article>
 <!-- Footer -->
 <footer class="footer-distributed">
     <div class="footer-left">
@@ -97,7 +82,5 @@
         </div>
     </div>
 </footer>
-<script src="scripts/map.js"></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIer4mKvQjmZd97ZHHBwXKEZ-N4n7aIsQ&callback=initMap"></script>
 </body>
 </html>

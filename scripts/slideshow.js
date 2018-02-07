@@ -1,3 +1,7 @@
+/*
+jquery
+https://codepen.io/TyStelmach/pen/yygvNK
+*/
 $(document).ready(function () {
     //rotation speed and timer
     var speed = 5000;
