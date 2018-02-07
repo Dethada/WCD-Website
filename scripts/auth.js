@@ -5,3 +5,7 @@ if (creds === null) {
 } else if (auth !== "1") {
     window.location.href = "login.html?auth=failed";
 }
+
+document.querySelector("#logout").addEventListener("click", function() {
+    eraseCookie("auth");
+});

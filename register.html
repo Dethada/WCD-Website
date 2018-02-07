@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
     <script src="scripts/responsive.js" defer></script>
-    <script src="scripts/cookies.js" defer></script>
     <script src="scripts/register.js" defer></script>
 </head>
 <body>
@@ -27,18 +26,21 @@
         </ul>
     </div>
 </header>
+<div class="bg-purple login-wrapper">
 <article id="login-form">
-    <h2 class="color-purple">Register</h2>
-    <form action="result.html">
+    <h2>Register</h2>
+    <form action="register_result.html">
         <fieldset>
         <input type="text" name="username" placeholder="Username" required><br>
         <input type="email" name="email" placeholder="Email" required><br>
         <input type="password" name="password1" placeholder="Password" required><br>
         <input type="password" name="password2" placeholder="Password" required><br>
         <input type="submit" value="Register">
+        <a href="login.html">Click here to login.</a>
         </fieldset>
     </form>
 </article>
+</div>
 <!-- Footer -->
 <footer class="footer-distributed">
     <div class="footer-left">

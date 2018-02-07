@@ -222,6 +222,10 @@ figure {
 	color: #A96DA3;
 }
 
+.bg-purple {
+	background-color: #442441;
+}
+
 h1 {
 	font-family: 'Alegreya', Georgia, 'Times New Roman', Times, serif;
 	font-size: 2em;
@@ -1035,22 +1039,29 @@ text-shadow:.5px 0px #b14943;
 #login-form {
 	text-align: center;
 	width: 50%;
+	max-width: 450px;
 	padding: 10px 0;
-	margin: 5% auto;
-	border: solid;
+	margin: 0 auto;
+	background: -moz-linear-gradient(142deg, #D969FF 0%, #008080 100%); /* ff3.6+ */
+    background: -webkit-linear-gradient(142deg, #D969FF 0%, #008080 100%); /* safari5.1+,chrome10+ */
+    background: -ms-linear-gradient(142deg, #D969FF 0%, #008080 100%); /* ie10+ */
+	background: linear-gradient(308deg, #D969FF 0%, #008080 100%); /* w3c */
+	-webkit-box-shadow: 9px 10px 67px 1px rgba(0,0,0,0.75);
+	-moz-box-shadow: 9px 10px 67px 1px rgba(0,0,0,0.75);
+	box-shadow: 9px 10px 67px 1px rgba(0,0,0,0.75);
 }
 
 #login-form input[type="text"], 
 #login-form input[type="password"],
 #login-form input[type="email"] {
 	display: block;
-	width: 309px;
+	width: 80%;
 	height: 35px;
 	margin: 5px auto;
 	background: #fff;
 	border: 0px;
 	padding: 5px;
-	font-size: 16px;
+	font-size: 1.2em;
 	border: 2px solid #fff;
 	transition: all 0.3s ease;
 	border-radius: 5px;
@@ -1061,22 +1072,22 @@ text-shadow:.5px 0px #b14943;
 #login-form input[type="text"]:focus, 
 #login-form input[type="password"]:focus,
 #login-form input[type="email"]:focus {
-	border: 2px solid #A96DA3;
+	border: 2px solid #442441;
 }
 
 #login-form input[type="submit"] {
 	display: block;
 	background: #A96DA3;
-	width: 314px;
+	width: 80%;
 	padding: 12px;
 	cursor: pointer;
-	color: #fff;
+	color: #000000;
 	border: 0px;
 	margin: auto;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
-	font-size: 17px;
+	font-size: 1.2em;
 	transition: all 0.3s ease;
 }
 
@@ -1087,14 +1098,52 @@ text-shadow:.5px 0px #b14943;
 #login-form a{
 	text-align: center;
 	font-family: Arial;
-	color: gray;
+	color: #000000;
 	display: block;
 	margin: 15px auto;
 	text-decoration: none;
 	transition: all 0.3s ease;
-	font-size: 12px;
-  }
-  
-  #login-form a:hover{
-	color: #A96DA3;
-  }
+	font-size: 0.8em;
+}
+
+#login-form a:hover{
+color: #c3b2c2;
+}
+
+.login-wrapper {
+	padding: 5% 0;
+}
+
+/* console page */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
