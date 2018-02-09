@@ -244,6 +244,11 @@ ul {
   padding:0;
 }
 
+a, a:visited, a:focus, a:hover, a:active {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+}
+
 /* For forms */
 .button_form {
 	height:38px;
@@ -687,13 +692,13 @@ text-shadow:.5px 0px #b14943;
 /* our mission */
 #about-mission {
 	text-align: center;
-	margin-top: 5em;	
+	margin-top: 2.5em;
 	overflow: hidden;
 }
 
 #about-mission p {
 	width: 60%;
-	font-size: 3em;
+	font-size: 2em;
 	margin: auto;
 	text-align: left;
 	color: #837979;
@@ -1054,7 +1059,8 @@ text-shadow:.5px 0px #b14943;
 #login-form input[type="text"], 
 #login-form input[type="password"],
 #login-form input[type="email"],
-#login-form input[type="date"] {
+#login-form input[type="date"],
+#login-form select {
 	display: block;
 	width: 80%;
 	height: 35px;
@@ -1142,7 +1148,7 @@ color: #c3b2c2;
 }
 
 .main {
-    margin-left: 230px; /* Same as the width of the sidenav */
+    margin-left: 200px; /* Same as the width of the sidenav */
 }
 
 @media screen and (max-height: 450px) {
@@ -1150,7 +1156,26 @@ color: #c3b2c2;
     .sidenav a {font-size: 18px;}
 }
 
+.inline-list {
+	width: 95%;
+}
+
 .inline-list li {
 	display: inline;
-	margin: 0 10%;
+	margin: 0 3%;
+}
+
+.custom-width {
+	width: 95%;
+	margin: auto;
+}
+
+.center {
+	margin: 3% auto;
+	text-align: center;
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 1.2em;
 }
