@@ -5,10 +5,8 @@ creds index
 2 - email
 3 - plan
 */
-var creds = readCookie("creds").split(":");
-
 // update user's current subscribed plan
-function updatePlan(plan) {
+function updatePlan(creds, plan) {
     creds[3] = plan;
     setCookie("creds", creds.join(':'), 99999999);
 }
@@ -17,17 +15,22 @@ function updatePlan(plan) {
 function authCheck() {
     if (readCookie("auth") !== '1') {
         window.location.href = "login.html";
+        return false;
     }
+    return true;
 }
 
 // basic plan pruchase button
 $(".color-free").click(function() {
-    authCheck();
-   if (creds[3] === "Basic") {
-    $.jqDialog.alert("You already have this plan");
-   } else {
+    if (!authCheck()) {
+        return;
+    }
+    var creds = readCookie("creds").split(":");
+    if (creds[3] === "Basic") {
+        $.jqDialog.alert("You already have this plan");
+    } else {
         $.jqDialog.confirm("Downgrade to the Basic Plan?", function(){
-            updatePlan('Basic');
+            updatePlan(creds, 'Basic');
             $.jqDialog.alert('Successfully purchased Basic Plan');
         });
     }
@@ -35,9 +38,12 @@ $(".color-free").click(function() {
 
 // pro plan pruchase button
 $(".color-pro").click(function() {
-    authCheck();
+    if (!authCheck()) {
+        return;
+    }
+    var creds = readCookie("creds").split(":");
     if (creds[3] === "Pro") {
-        alert("You already have this plan");
+        $.jqDialog.alert("You already have this plan");
     } else {
         var msg;
         if (creds[3] == "Basic") {
@@ -46,7 +52,7 @@ $(".color-pro").click(function() {
             msg = "Downgrade";
         }
         $.jqDialog.confirm(msg + " to the Pro Plan?", function(){
-            updatePlan('Pro');
+            updatePlan(creds, 'Pro');
             $.jqDialog.alert('Successfully purchased Pro Plan');
         });
     }
@@ -54,12 +60,15 @@ $(".color-pro").click(function() {
 
  // business plan pruchase button
  $(".color-business").click(function() {
-    authCheck();
+    if (!authCheck()) {
+        return;
+    }
+    var creds = readCookie("creds").split(":");
     if (creds[3] === "Business") {
-        alert("You already have this plan");
+        $.jqDialog.alert("You already have this plan");
     } else {
         $.jqDialog.confirm("Upgrade to the Business Plan?", function(){
-            updatePlan('Business');
+            updatePlan(creds, 'Business');
             $.jqDialog.alert('Successfully purchased Business Plan');
         });
     }
