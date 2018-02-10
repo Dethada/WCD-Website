@@ -7,7 +7,11 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/responsive.js" defer></script>
+    <script src="scripts/cookies.js" defer></script>
+    <script src="scripts/jqdialog.min.js" defer></script>
+    <script src="scripts/purchase_plan.js" defer></script>
 </head>
 
 <body>
@@ -21,6 +25,7 @@
         <ul>
             <li><a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
             <li class="current"><a href="product.html"><i class="fa fa-code" aria-hidden="true"></i> Product</a></li>
+            <li><a href="console.html"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Console</a></li>
             <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</a></li>
             <li><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
         </ul>
@@ -32,7 +37,7 @@
 <article id="product-description">
 <header class="heading"><h2>SyzygyySTORAGE</h2></header>
 <br>
-<p>We use blockchain technology to provide highest levels of data security.<br>
+<p>We use blockchain technology to provide highest levels of data security.
     Instead of running our own servers like the conventional cloud service providers, we allow other users to contribute 
     their own storage and we pay them according to how much of their shared storage is being used. This means we can provide 
     storage at a lower price compared to traditional cloud storage service providers, there is also no worries of your 
@@ -85,7 +90,7 @@
         <div class="plan-description">
         <p>Suitable for personal use, backup your important files.<br>Max storage: 5GB</p>
         </div>
-        <a class="plans-button color-free" href="#">PURCHASE PLAN</a>
+        <a class="plans-button color-free" href="#plans">PURCHASE PLAN</a>
     </article>
     <article class="plans-card plans-card-pro">
         <h2>Pro</h2>
@@ -94,7 +99,7 @@
         <div class="plan-description">
         <p>Suitable for professional use, anyone with less than 1gb of files to store.<br>Max storage: 100GB</p>
         </div>
-        <a class="plans-button color-pro" href="#">PURCHASE PLAN</a>
+        <a class="plans-button color-pro" href="#plans">PURCHASE PLAN</a>
     </article>
     <article class="plans-card plans-card-business">
         <h2>Business</h2>
@@ -103,7 +108,7 @@
         <div class="plan-description">
         <p>Suitable businesses requiring large amount of reliable, secure and fast storage.<br>Max Storage: Unlimited</p>
         </div>
-        <a class="plans-button color-business" href="#">PURCHASE PLAN</a>
+        <a class="plans-button color-business" href="#plans">PURCHASE PLAN</a>
     </article>
     <article class="plans-card plans-card-enterprise">
         <h2>Enterprise</h2>

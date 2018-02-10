@@ -21,36 +21,35 @@
         <ul>
             <li><a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
             <li><a href="product.html"><i class="fa fa-code" aria-hidden="true"></i> Product</a></li>
+            <li><a href="console.html"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Console</a></li>
             <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</a></li>
             <li class="current"><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
         </ul>
     </div>
 </header>
+
+<!-- registration form -->
 <div class="bg-purple login-wrapper">
 <article id="login-form">
     <h2>Register</h2>
-    <form action="register_result.html">
+    <form action="register_result.html" onsubmit="validateForm();">
         <fieldset>
         <input type="text" name="username" placeholder="Username" required><br>
         <input type="email" name="email" placeholder="Email" required><br>
-        <input type="password" name="password1" placeholder="Password" required><br>
-        <input type="password" name="password2" placeholder="Password" required><br>
-        <input type="text" name="cardno" placeholder="Card Number" required><br>
-        <input type="text" name="cvv" placeholder="CVV" required><br>
-        <input type="text" name="cardowner" placeholder="Card Owner" required><br>
-        <input type="date" name="expdate" required><br>
-        <!-- <input type="text" name="plan" placeholder="Plan" required><br> -->
-        <select>
-                <option value="Basic">Basic</option>
-                <option value="Pro">Pro</option>
-                <option value="Business">Business</option>
-              </select>
+        <input id="pw1" type="password" name="password1" placeholder="Password" required><br>
+        <input id="pw2" type="password" name="password2" placeholder="Password" required><br>
+        <select name="plan">
+            <option value="Basic">Basic</option>
+            <option value="Pro">Pro</option>
+            <option value="Business">Business</option>
+        </select>
         <input type="submit" value="Register">
         <a href="login.html">Click here to login.</a>
         </fieldset>
     </form>
 </article>
 </div>
+
 <!-- Footer -->
 <footer class="footer-distributed">
     <div class="footer-left">

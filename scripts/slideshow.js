@@ -1,5 +1,4 @@
 /*
-jquery
 https://codepen.io/TyStelmach/pen/yygvNK
 */
 $(document).ready(function () {
@@ -11,6 +10,7 @@ $(document).ready(function () {
     var container = $('#slides ul');
     var elm = container.find(':first-child').prop("tagName");
     var item_width = container.width();
+
     var previous = 'prev'; //id of previous button
     var next = 'next'; //id of next button
     slides.width(item_width); //set the slides to the correct pixel width
@@ -52,7 +52,7 @@ $(document).ready(function () {
     }).mouseleave(function () {
         run = setInterval(rotate, speed);
     });
-    
+
     function resetSlides() {
         //and adjust the container so current is in the frame
         container.css({
@@ -60,6 +60,10 @@ $(document).ready(function () {
         });
     }
 });
+
+$(window).on('resize', function() {
+    location.reload();
+})
 
 //a simple function to click next link
 //a timer will call this function, and the rotation will begin

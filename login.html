@@ -22,15 +22,18 @@
         <ul>
             <li><a href="about.html"><i class="fa fa-users" aria-hidden="true"></i> About</a></li>
             <li><a href="product.html"><i class="fa fa-code" aria-hidden="true"></i> Product</a></li>
+            <li><a href="console.html"><i class="fa fa-connectdevelop" aria-hidden="true"></i> Console</a></li>
             <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Contact</a></li>
             <li class="current"><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
         </ul>
     </div>
 </header>
+
+<!-- login form -->
 <div class="bg-purple login-wrapper">
 <article id="login-form">
     <h2>Login</h2>
-    <form action="console.html">
+    <form action="console.html" onsubmit="validateLogin();">
         <fieldset>
         <input type="text" placeholder="Username" required><br>
         <input type="password" placeholder="Password" required><br>
@@ -40,6 +43,7 @@
     </form>
 </article>
 </div>
+
 <!-- Footer -->
 <footer class="footer-distributed">
     <div class="footer-left">

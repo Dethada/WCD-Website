@@ -12,22 +12,27 @@
     <script src="scripts/profile.js" defer></script>
 </head>
 <body>
+
 <!-- side nav bar -->
 <div class="sidenav">
+    <p>Welcome, John Doe</p>
+    <a href="#" onclick="alert('Upload function still under development');">Upload</a>
+    <div class="line"></div>
     <a href="index.html">Home</a>
     <a href="console.html">Console</a>
-    <a href="profile.html">Profile</a>
+    <a id="active" href="profile.html">Profile</a>
     <a href="product.html#plans">Plans</a>
     <a href="login.html" id="logout">Logout</a>
 </div>
 
 <div class="main">
     <h2>Syzygyy Storage</h2><br>
+    <!-- user profile details -->
     <ul id="user-details">
         <li id="username"><span class="bold">Username</span><br><p></p></li>
         <li id="email"><span class="bold">Email</span><br><p></p></li>
         <li id="plan"><span class="bold">Plan</span><br><p></p></li>
-        <li id="payment"><span class="bold">Payment Details</span><br><p></p></li>
+        <li id="storage"><span class="bold">Storage Space</span><br><p></p></li>
     </ul>
 </div>
 </body>
