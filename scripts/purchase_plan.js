@@ -26,7 +26,10 @@ $(".color-free").click(function() {
    if (creds[3] === "Basic") {
     $.jqDialog.alert("You already have this plan");
    } else {
-        $.jqDialog.confirm("Downgrade to the Basic Plan?", updatePlan('Basic'));
+        $.jqDialog.confirm("Downgrade to the Basic Plan?", function(){
+            updatePlan('Basic');
+            $.jqDialog.alert('Successfully purchased Basic Plan');
+        });
     }
 });
 
@@ -42,7 +45,10 @@ $(".color-pro").click(function() {
         } else {
             msg = "Downgrade";
         }
-        $.jqDialog.confirm(msg + " to the Pro Plan?", updatePlan('Pro'));
+        $.jqDialog.confirm(msg + " to the Pro Plan?", function(){
+            updatePlan('Pro');
+            $.jqDialog.alert('Successfully purchased Pro Plan');
+        });
     }
  });
 
@@ -52,6 +58,9 @@ $(".color-pro").click(function() {
     if (creds[3] === "Business") {
         alert("You already have this plan");
     } else {
-        $.jqDialog.confirm("Upgrade to the Business Plan?", updatePlan('Business'));
+        $.jqDialog.confirm("Upgrade to the Business Plan?", function(){
+            updatePlan('Business');
+            $.jqDialog.alert('Successfully purchased Business Plan');
+        });
     }
  });
