@@ -1163,6 +1163,10 @@ color: #c3b2c2;
     margin-left: 210px;
 }
 
+.main header {
+	font-size: 1.5em;
+}
+
 .files {
 	margin: 0 3%;
 }
@@ -1212,6 +1216,11 @@ color: #c3b2c2;
 
 #user-details {
 	list-style: none;
+	font-size: 1.3em;
+}
+
+#user-details li {
+	margin: 2% 0;
 }
 
 /* jqdialog */
